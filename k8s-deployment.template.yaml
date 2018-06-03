@@ -28,6 +28,13 @@ spec:
         - -Xmx1024M
         - -jar
         - /app/main.jar
+        resources:
+          limits:
+            cpu: "2"
+            memory: 1536Mi
+          requests:
+            cpu: "2"
+            memory: 1280Mi
         ports:
         - containerPort: 80
         resources:

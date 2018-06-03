@@ -7,7 +7,7 @@ public class MemoryEater
     Vector v = new Vector();
     while (true)
     {
-      byte b[] = new byte[1048576];
+      byte b[] = new byte[1024];
       v.add(b);
       Runtime rt = Runtime.getRuntime();
       System.out.println( "free memory: " + rt.freeMemory() );
