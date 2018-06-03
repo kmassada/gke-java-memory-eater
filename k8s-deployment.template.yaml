@@ -26,6 +26,7 @@ spec:
         - -Dspring.profiles.active=prod
         - -Xms1024M
         - -Xmx1024M
+        - -XX:+UseCGroupMemoryLimitForHeap option
         - -jar
         - /app/main.jar
         resources:
