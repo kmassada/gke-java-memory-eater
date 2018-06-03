@@ -27,6 +27,7 @@ spec:
         - -Xms1024M
         - -Xmx1024M
         - -XX:+UseCGroupMemoryLimitForHeap
+        - -XX:+UnlockExperimentalVMOptions
         - -jar
         - /app/main.jar
         resources:
